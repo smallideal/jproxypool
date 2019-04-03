@@ -24,7 +24,6 @@ public abstract class AbstractPageHandler implements PageProcessor {
 
     @Override
     public Site getSite() {
-        return Site.me().setRetryTimes(3).setSleepTime(1000)
-                .setUserAgent("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36");
+        return Site.me().setRetryTimes(3).setSleepTime(1000);
     }
 }

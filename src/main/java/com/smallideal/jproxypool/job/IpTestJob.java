@@ -14,15 +14,15 @@ import org.springframework.util.CollectionUtils;
 import java.math.BigDecimal;
 import java.util.List;
 
-public class ConnectionTestJob implements Job {
+public class IpTestJob implements Job {
 
     private ProxyIpService proxyIpService;
 
-    private static final Logger logger = LoggerFactory.getLogger(ConnectionTestJob.class);
+    private static final Logger logger = LoggerFactory.getLogger(IpTestJob.class);
 
     private int availableProcessorsSize;
 
-    public ConnectionTestJob() {
+    public IpTestJob() {
         proxyIpService = CrawlerStarter.applicationContext.getBean(ProxyIpService.class);
         availableProcessorsSize = Runtime.getRuntime().availableProcessors();
     }

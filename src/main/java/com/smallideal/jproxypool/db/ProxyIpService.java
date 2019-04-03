@@ -62,7 +62,7 @@ public class ProxyIpService {
 
     public List<ProxyIp> findValidIp(int limit) {
         Query query = new Query();
-        query.addCriteria(Criteria.where("protocol").is(1));
+        query.addCriteria(Criteria.where("protocol").is(1).and("checkTime").gt(0));
         query.with(Sort.by(Sort.Order.desc("checkTime")));
         query.limit(limit);
         return mongoTemplate.find(query,ProxyIp.class);

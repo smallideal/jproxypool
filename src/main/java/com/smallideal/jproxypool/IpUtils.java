@@ -114,6 +114,9 @@ public class IpUtils {
 
 
     public static boolean isIpAddress(String ip) {
+        if(ip==null || "".equals(ip)){
+            return false;
+        }
         String ipPattern = "([1-9]|[1-9]\\d|1\\d{2}|2[0-4]\\d|25[0-5])(\\.(\\d|[1-9]\\d|1\\d{2}|2[0-4]\\d|25[0-5])){3}";
         Pattern pattern = Pattern.compile(ipPattern);
         return pattern.matcher(ip).matches();

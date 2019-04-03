@@ -1,6 +1,6 @@
 package com.smallideal.jproxypool.crawler;
 
-import com.smallideal.jproxypool.job.ConnectionTestJob;
+import com.smallideal.jproxypool.job.IpTestJob;
 import com.smallideal.jproxypool.job.CrawlerJob;
 import org.quartz.*;
 import org.slf4j.Logger;
@@ -65,7 +65,7 @@ public class CrawlerStarter implements  ApplicationContextAware {
         String groupName = "default";
         String cron = "*/5 * * * * ?";
         JobDetail jobDetail = JobBuilder
-                .newJob(ConnectionTestJob.class)
+                .newJob(IpTestJob.class)
                 .usingJobData("jobName", jobName)
                 .withIdentity(jobName, groupName)
                 .build();

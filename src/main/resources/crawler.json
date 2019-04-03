@@ -8,5 +8,20 @@
     "handler": "xicidaili",
     "category": "国内高匿代理",
     "links": "https://www.xicidaili.com/nn/[1-10]"
+  },
+  {
+    "handler":"kuaidaili",
+    "category":"国内高匿代理",
+    "links":"https://www.kuaidaili.com/free/inha/[1-10]/"
+  },
+  {
+    "handler":"ip3366",
+    "category":"国内高匿代理",
+    "links":"http://www.ip3366.net/free/?stype=1&page=[1-10]"
+  },
+  {
+    "handler":"jiangxianli",
+    "category":"国内高匿代理",
+    "links":"http://ip.jiangxianli.com/?page=[1-10]"
   }
 ]
